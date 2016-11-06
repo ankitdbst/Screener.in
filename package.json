@@ -33,6 +33,12 @@
     "jest-webpack-alias": "3.3.0",
     "webpack": "1.13.2"
   },
+  "scripts": {
+    "prestart": "webpack -d && (node server.js&)",
+    "start": "webpack -d --watch",
+    "build": "NODE_ENV=production webpack -p",
+    "test": "jest --verbose"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Mittal-Analytics/screener.in"
