@@ -2,7 +2,7 @@
   "name": "screener",
   "version": "1.0.0",
   "description": "Screener.in frontend based on Reactjs",
-  "main": "app/index.js",
+  "main": "server.js",
   "dependencies": {
     "chartist": "0.9.8",
     "classnames": "2.2.5",
@@ -32,12 +32,6 @@
     "jest-cli": "^16.0.1",
     "jest-webpack-alias": "3.3.0",
     "webpack": "1.13.2"
-  },
-  "scripts": {
-    "prestart": "webpack -d && (node server.js&)",
-    "start": "webpack -d --watch",
-    "build": "NODE_ENV=production webpack -p",
-    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
